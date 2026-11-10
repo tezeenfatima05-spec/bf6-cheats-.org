@@ -34,9 +34,9 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Battlefield 6 community forum: Discuss aimbot settings, ESP layouts, Cloud DMA setup, and troubleshooting for Battlefield 6.',
   },
   '/faq/': {
-    title: 'FAQ – BF6 aimbot, ESP & platforms | BF6 Cheats',
+    title: 'FAQ – aimbot, ESP, platforms & DMA | Cheats',
     description:
-      'FAQ: Answers on BF6 aimbot, ESP, Cloud DMA, checkout, and supported platforms at bf6cheats.org.',
+      'FAQ: Answers on BF6 aimbot, ESP, Cloud DMA, checkout, and supported platforms at bf6cheats.org. Help center FAQ for Battlefield 6 cheats, setup & guides.',
   },
   '/terms/': {
     title: 'Terms & Conditions | BF6 Cheats',

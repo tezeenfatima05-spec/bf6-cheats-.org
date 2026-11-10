@@ -3,6 +3,4 @@ Allow: /
 
 Disallow: /go/
 
-Sitemap: https://bf6cheats.org/sitemap.xml
-
-# RSS: https://bf6cheats.org/rss.xml
+Sitemap: /sitemap.xml
