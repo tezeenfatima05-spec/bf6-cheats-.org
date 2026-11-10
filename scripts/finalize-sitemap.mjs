@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { findSitemapChunkPath, resolveDistAssetDir } from './dist-asset-dir.mjs';
+import { getSiteOrigin } from './site-origin.mjs';
 
 const root = process.cwd();
 const assetDir = resolveDistAssetDir(root);
@@ -38,13 +39,21 @@ function formatUrlset(xml) {
     .replace(/<\/priority>/g, '</priority>\n');
 }
 
-const formatted = formatUrlset(raw);
+const siteOrigin = getSiteOrigin();
+
+function rewriteLocHosts(xml) {
+  return xml.replace(/<loc>https?:\/\/[^/]+(\/[^<]*)<\/loc>/g, (_tag, pathname) => {
+    return `<loc>${siteOrigin}${pathname}</loc>`;
+  });
+}
+
+const formatted = rewriteLocHosts(formatUrlset(raw));
 fs.writeFileSync(path.join(assetDir, 'sitemap.xml'), formatted, 'utf8');
 
 const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://bf6cheats.org/sitemap.xml</loc>
+    <loc>${siteOrigin}/sitemap.xml</loc>
     <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod>
   </sitemap>
 </sitemapindex>
@@ -53,4 +62,13 @@ fs.writeFileSync(path.join(assetDir, 'sitemap-index.xml'), indexXml, 'utf8');
 fs.writeFileSync(path.join(assetDir, 'sitemap-0.xml'), formatted, 'utf8');
 
 const rel = path.relative(root, assetDir).replace(/\\/g, '/');
+const robots = `User-agent: *
+Allow: /
+
+Disallow: /go/
+
+Sitemap: ${siteOrigin}/sitemap.xml
+`;
+fs.writeFileSync(path.join(assetDir, 'robots.txt'), robots, 'utf8');
+
 console.log(`Sitemap finalized: ${urlCount} URLs → ${rel}/sitemap.xml`);

@@ -48,6 +48,10 @@ export interface ProductCard {
 }
 
 export interface BlogPost {
+  /** Full document title when pageTitle() suffix is not wanted. */
+  seoTitle?: string;
+  /** Meta description override for `<meta name="description">`. */
+  metaDescription?: string;
   tag: string;
   title: string;
   slug: string;

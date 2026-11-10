@@ -8,6 +8,9 @@ export const blogPosts: BlogPostFull[] = [
     slug: 'bf6-aimbot-settings-guide',
     image: '/images/gameplay/screenshot-1.webp',
     desc: 'Tune Battlefield 6 aimbot smoothness, FOV rings, bone priorities, and visible check before queuing Conquest.',
+    seoTitle: 'BF6 aimbot settings: smoothness, FOV, and bone | Cheats',
+    metaDescription:
+      'Tune Battlefield 6 aimbot smoothness, FOV rings, bone priorities, and visible check before queuing Conquest—setup checklist for Conquest.',
     date: 'Aug 18, 2026',
     readTime: '7 min read',
     body: [
@@ -26,6 +29,10 @@ export const blogPosts: BlogPostFull[] = [
         text: 'Enable FOV border and background only while tuning. Once values feel right, hide the ring so your HUD stays clean. Save the preset through the config system so you can reload after patches.',
       },
       {
+        type: 'p',
+        text: 'After each Battlefield 6 patch, re-run the same drill: load a private match, confirm visible check still respects cover, then raise smoothness in small steps until tracking feels natural without snapping.',
+      },
+      {
         type: 'cta',
         title: 'Ready for access?',
         text: 'Review the full aimbot checklist on the product page.',
@@ -35,10 +42,12 @@ export const blogPosts: BlogPostFull[] = [
   },
   {
     tag: 'Setup',
-    title: 'Battlefield 6 player ESP and wallhack setup',
+    title: 'Battlefield 6 player ESP and wallhack setup — BF6 Cheats',
     slug: 'bf6-player-esp-wallhack-setup',
     image: '/images/gameplay/screenshot-3.webp',
-    desc: 'Box, skeleton, snapline, and health bar ESP for BF6—with max distance tips for Conquest.',
+    desc: 'Box, skeleton, snapline, and health bar overlays for BF6—with max distance tips for Conquest and large maps.',
+    metaDescription:
+      'Box, skeleton, snapline, and health bar ESP for BF6—with max distance tips for Conquest, team filters, and safe defaults on PC.',
     date: 'Aug 17, 2026',
     readTime: '6 min read',
     body: [
@@ -49,22 +58,33 @@ export const blogPosts: BlogPostFull[] = [
       { type: 'h2', text: 'Team filters' },
       {
         type: 'p',
-        text: 'Use team color filters so allies stay muted while enemies stay bright. Pair ESP with aimbot target teams enabled so automation respects the same filters.',
+        text: 'Use team color filters so allies stay muted while enemies stay bright. Pair wallhack overlays with aimbot target teams enabled so automation respects the same filters.',
+      },
+      {
+        type: 'p',
+        text: 'Save a low-visual preset for clips: fewer snaplines, shorter draw distance, and no skeleton until you confirm stable FPS in a full Conquest lobby.',
       },
     ],
   },
   {
     tag: 'Features',
-    title: 'BF6 bot ESP and target bots in aimbot',
+    title: 'BF6 bot ESP and target bots in aimbot | Cheats',
     slug: 'bf6-bot-esp-tracking',
     image: '/images/gameplay/screenshot-2.webp',
     desc: 'When to enable bot ESP, how target bots interacts with playlists, and safe defaults.',
+    seoTitle: 'BF6 bot ESP and target bots in aimbot | Cheats',
+    metaDescription:
+      'When to enable bot ESP, how target bots interacts with playlists, and safe defaults for mixed PvP and PvE playlists on Battlefield 6.',
     date: 'Aug 16, 2026',
     readTime: '5 min read',
     body: [
       {
         type: 'p',
         text: 'Mixed playlists can flood your overlay if bots and players share the same color. Enable Bot ESP separately, then decide whether aimbot should target bots during PvE moments or ignore them entirely in PvP-heavy modes.',
+      },
+      {
+        type: 'p',
+        text: 'Test bot ESP in a private lobby first: confirm labels match your color keys, then load a live playlist so you can see whether aimbot ignores bots when you disable the target-bots toggle.',
       },
     ],
   },

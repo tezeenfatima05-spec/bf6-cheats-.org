@@ -5,3 +5,6 @@ compatibility_date = "2024-11-10"
 [assets]
 directory = "./dist"
 not_found_handling = "404-page"
+
+[vars]
+SITE = "https://bf6-cheats--org.tazeenrooziroti.workers.dev"

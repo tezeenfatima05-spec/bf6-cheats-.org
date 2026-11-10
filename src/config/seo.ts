@@ -2,7 +2,8 @@ import { t } from '../i18n';
 import { SITE_DOMAIN as INDEXNOW_HOST_NAME } from './site';
 import { getPageSeoEntry } from './pageSeo';
 
-export const SITE_ORIGIN = `https://${t.site.domain}`;
+const configuredSite = import.meta.env.SITE as string | undefined;
+export const SITE_ORIGIN = (configuredSite?.replace(/\/$/, '') || `https://${t.site.domain}`);
 
 export const DEFAULT_OG_IMAGE = '/images/gameplay/hero-poster.webp';
 

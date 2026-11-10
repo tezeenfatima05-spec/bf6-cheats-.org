@@ -2,9 +2,10 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import { sitemapSerialize } from './src/config/sitemap.ts';
+import { getSiteOrigin } from './scripts/site-origin.mjs';
 
 export default defineConfig({
-  site: 'https://bf6cheats.org',
+  site: getSiteOrigin(),
   trailingSlash: 'always',
   redirects: {
     '/cheats/': '/products/battlefield-6-cheats/',
