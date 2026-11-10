@@ -35,7 +35,7 @@ export function buildRssFeed(): string {
   <channel>
     <title>BF6 Cheats Blog</title>
     <link>${SITE_ORIGIN}/blog/</link>
-    <description>Dota 2 cheat guides, patch notes, and setup walkthroughs from dotacheats.com.</description>
+    <description>Battlefield 6 setup guides, patch notes, and aimbot or ESP tuning from bf6cheats.org.</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${feedUrl}" rel="self" type="application/rss+xml" />
