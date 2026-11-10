@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /go/
+
+Sitemap: https://bf6cheats.org/sitemap.xml
+
+# RSS: https://bf6cheats.org/rss.xml
