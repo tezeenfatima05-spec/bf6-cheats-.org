@@ -23,6 +23,15 @@ const navIcons: Record<string, IconName> = {
   Support: 'navSupport',
 };
 
+/** Unique link titles (visible anchor text stays on nav labels). */
+const navAnchorLabels: Record<string, string> = {
+  Products: 'BF6 product catalog',
+  Blog: 'Setup & patch guides',
+  Forum: 'Community Q&A',
+  FAQ: 'Pre-purchase help',
+  Support: 'Loader support desk',
+};
+
 const purchaseUrl = checkoutPath('bf6');
 ---
 
@@ -44,7 +53,7 @@ const purchaseUrl = checkoutPath('bf6');
           {...(link.scrollTarget ? { 'data-scroll-target': link.scrollTarget } : {})}
         >
           <Icon name={navIcons[link.label] ?? 'navFeatures'} size={16} />
-          {link.label}
+          {navAnchorLabels[link.label] ?? link.label}
         </a>
       ))}
     </nav>
@@ -80,7 +89,7 @@ const purchaseUrl = checkoutPath('bf6');
                 {...(link.scrollTarget ? { 'data-scroll-target': link.scrollTarget } : {})}
               >
                 <Icon name={navIcons[link.label] ?? 'navFeatures'} size={16} />
-                {link.label}
+                {navAnchorLabels[link.label] ?? link.label}
               </a>
             ))}
           </nav>

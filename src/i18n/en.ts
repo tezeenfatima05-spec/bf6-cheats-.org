@@ -23,8 +23,8 @@ export const en: Translations = {
   hero: {
     status: 'Battlefield 6 — build online',
     eyebrow: 'Premium BF6 software',
-    titleLine1: 'BF6',
-    titleLine2: 'Cheats for PC',
+    titleLine1: 'BF6 Aimbot',
+    titleLine2: 'ESP & Wallhack for PC',
     subtitle:
       'Battlefield 6 cheats with customizable aimbot, player ESP, bot ESP, and Cloud DMA support—built for large maps and 64-player fights at bf6cheats.org.',
     ctaPrimary: 'View product',
@@ -465,7 +465,7 @@ export const en: Translations = {
     explore: 'Explore',
     exploreLinks: [
       { href: '/', label: 'Feature overview', ariaLabel: 'Features', scrollTarget: 'features' },
-      { href: '/products/battlefield-6-cheats/bf6/', label: 'Battlefield 6 cheats', ariaLabel: 'BF6 product' },
+      { href: '/products/battlefield-6-cheats/bf6/', label: 'BF6 feature breakdown', ariaLabel: 'BF6 product' },
       { href: '/products/battlefield-6-cheats/', label: 'All products & utilities', ariaLabel: 'Products' },
       { href: '/blog/', label: 'Read patch guides', ariaLabel: 'Blog' },
       { href: '/faq/', label: 'Pre-purchase FAQ', ariaLabel: 'FAQ' },

@@ -125,7 +125,16 @@ export const blogPosts: BlogPostFull[] = [
     body: [
       {
         type: 'p',
-        text: 'Save one profile for infantry, one for vehicles, and one low-ESP preset for streaming or clips. Share codes only with people who understand the same risk level—never paste configs in public Discord logs.',
+        text: 'Save one profile for infantry, one for vehicles, and one low-visual preset for streaming or clips. Share codes only with people who understand the same risk level—never paste configs in public Discord logs.',
+      },
+      { type: 'h2', text: 'Naming presets' },
+      {
+        type: 'p',
+        text: 'Use short names with the map or weapon role in the title—`conquest-infantry` and `tank-breakthrough` are easier to spot than `config2`. Keep a dated backup before major patches so you can roll back if a slider behaves differently after a loader update.',
+      },
+      {
+        type: 'p',
+        text: 'Bind menu and unload keys you can reach without moving the mouse off your primary monitor. In multi-monitor rigs, open the loader on the same display as Battlefield 6 so focus changes do not leave the game fullscreen.',
       },
     ],
   },
@@ -141,6 +150,15 @@ export const blogPosts: BlogPostFull[] = [
       {
         type: 'p',
         text: 'Enable crosshair only if the in-game reticle hides during suppression. Thicker lines help on HDR displays; thinner lines suit 1440p competitive play.',
+      },
+      { type: 'h2', text: 'Style and size' },
+      {
+        type: 'p',
+        text: 'Start with a hollow dot or short line at native resolution, then raise thickness until it stays visible on sandy maps without covering distant targets. If you record content, disable the overlay crosshair on stream capture and keep it for live play only.',
+      },
+      {
+        type: 'p',
+        text: 'Pair crosshair tweaks with a separate aimbot profile so visual changes never reset FOV or smoothness values stored for Conquest.',
       },
     ],
   },
@@ -170,7 +188,7 @@ export const blogPosts: BlogPostFull[] = [
     body: [
       {
         type: 'p',
-        text: 'Open [Battlefield 6 Cheats](/products/battlefield-6-cheats/bf6/), review the feature list, and use Buy now to reach secure checkout. After payment, follow the portal email, download the loader, and test in a private lobby.',
+        text: 'Open the [BF6 checkout and feature list](/products/battlefield-6-cheats/bf6/), review the feature list, and use Buy now to reach secure checkout. After payment, follow the portal email, download the loader, and test in a private lobby.',
       },
       {
         type: 'cta',

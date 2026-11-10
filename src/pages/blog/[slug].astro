@@ -23,6 +23,8 @@ import { Button } from '@/components/starwind/button';
 import { Prose } from '@/components/starwind/prose';
 import BlogPostCta from '../../components/BlogPostCta.astro';
 import { normalizeInternalPath, ROUTES } from '../../utils/path';
+import { canonicalUrl } from '../../config/seo';
+import BlogShareLinks from '../../components/BlogShareLinks.astro';
 
 export function getStaticPaths() {
   return getAllBlogSlugs().map((slug) => ({ params: { slug } }));
@@ -112,6 +114,7 @@ const published = parseBlogDate(post.date);
           <header class="blog-article__header">
             <h1 class="blog-article__title">{post.title}</h1>
             <p class="blog-article__lead">{post.desc}</p>
+            <BlogShareLinks pageUrl={canonicalUrl(postPath)} pageTitle={post.title} />
             {
               post.author && (
                 <p class="blog-article__byline">
