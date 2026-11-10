@@ -99,7 +99,7 @@ const published = parseBlogDate(post.date);
           <figure class="blog-article__hero">
             <ResponsiveImage
               src={post.image}
-              alt={post.title}
+              alt={post.imageAlt ?? post.title}
               width={960}
               height={540}
               loading="eager"
@@ -179,15 +179,15 @@ const published = parseBlogDate(post.date);
           </Prose>
 
           <nav class="blog-article__actions" aria-label="Continue reading">
-            <Button as="a" href={checkoutPath('dota2')} variant="primary" aria-label={t.ui.checkoutAria}>
-              Buy Dota 2 Cheats
+            <Button as="a" href={checkoutPath('bf6')} variant="primary" aria-label={t.ui.checkoutAria}>
+              Checkout BF6 access
               <Icon name="arrowRight" size={17} />
             </Button>
             <Button as="a" href={ROUTES.products} variant="outline">
-              View products
+              Browse product catalog
             </Button>
             <Button as="a" href={ROUTES.blog} variant="outline">
-              More articles
+              More setup guides
               <Icon name="arrowRight" size={17} />
             </Button>
           </nav>

@@ -4,9 +4,10 @@ export const blogPosts: BlogPostFull[] = [
   {
     featured: true,
     tag: 'Setup',
-    title: 'BF6 aimbot settings: smoothness, FOV, and bone selection',
+    title: 'BF6 aimbot settings: smoothness, FOV, and bone selection — Cheats',
     slug: 'bf6-aimbot-settings-guide',
     image: '/images/gameplay/screenshot-1.webp',
+    imageAlt: 'BF6 aimbot settings guide — in-game overlay screenshot',
     desc: 'Tune Battlefield 6 aimbot smoothness, FOV rings, bone priorities, and visible check before queuing Conquest.',
     seoTitle: 'BF6 aimbot settings: smoothness, FOV, and bone | Cheats',
     metaDescription:
@@ -16,7 +17,7 @@ export const blogPosts: BlogPostFull[] = [
     body: [
       {
         type: 'p',
-        text: 'Battlefield 6 aimbot settings should start conservative: wider smoothness, smaller FOV, and visible check enabled. Open the Aimbot tab in the loader, bind a thumb-button you can release quickly, and test in a custom match before 64-player playlists. Product details live on [Battlefield 6 Cheats](/products/battlefield-6-cheats/bf6/).',
+        text: 'Battlefield 6 aimbot settings should start conservative: wider smoothness, smaller FOV, and visible check enabled. Open the Aimbot tab in the loader, bind a thumb-button you can release quickly, and test in a custom match before 64-player playlists. Product details live on the [BF6 aimbot feature list](/products/battlefield-6-cheats/bf6/).',
       },
       { type: 'h2', text: 'Bone selection and distance' },
       {
@@ -68,23 +69,28 @@ export const blogPosts: BlogPostFull[] = [
   },
   {
     tag: 'Features',
-    title: 'BF6 bot ESP and target bots in aimbot | Cheats',
+    title: 'BF6 bot tracking and target bots in aimbot | Cheats',
     slug: 'bf6-bot-esp-tracking',
     image: '/images/gameplay/screenshot-2.webp',
-    desc: 'When to enable bot ESP, how target bots interacts with playlists, and safe defaults.',
-    seoTitle: 'BF6 bot ESP and target bots in aimbot | Cheats',
+    imageAlt: 'BF6 bot tracking — gameplay screenshot with overlays',
+    desc: 'When to enable bot overlays, how target bots interacts with playlists, and safe defaults.',
+    seoTitle: 'Bot esp – how target bots interact with playlists | Cheats',
     metaDescription:
-      'When to enable bot ESP, how target bots interacts with playlists, and safe defaults for mixed PvP and PvE playlists on Battlefield 6.',
+      'Bot esp: when to enable bot overlays, how target bots interact with playlists, and safe defaults for mixed PvP and PvE on Battlefield 6.',
     date: 'Aug 16, 2026',
     readTime: '5 min read',
     body: [
       {
         type: 'p',
-        text: 'Mixed playlists can flood your overlay if bots and players share the same color. Enable Bot ESP separately, then decide whether aimbot should target bots during PvE moments or ignore them entirely in PvP-heavy modes.',
+        text: 'Mixed playlists can flood your overlay if bots and players share the same color. Enable bot labels separately, then decide whether aimbot should target bots during PvE moments or ignore them entirely in PvP-heavy modes.',
       },
       {
         type: 'p',
-        text: 'Test bot ESP in a private lobby first: confirm labels match your color keys, then load a live playlist so you can see whether aimbot ignores bots when you disable the target-bots toggle.',
+        text: 'Test the bot overlay in a private lobby first: confirm labels match your color keys, then load a live playlist so you can see whether aimbot ignores bots when you disable the target-bots toggle.',
+      },
+      {
+        type: 'p',
+        text: 'In Breakthrough-style modes, shorten draw distance for bot markers before you raise aimbot priority—fewer simultaneous targets keeps the HUD readable when armor columns push mid-map.',
       },
     ],
   },

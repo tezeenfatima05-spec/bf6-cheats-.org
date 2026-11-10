@@ -52,6 +52,8 @@ export interface BlogPost {
   seoTitle?: string;
   /** Meta description override for `<meta name="description">`. */
   metaDescription?: string;
+  /** Hero image alt override for accessibility and SEO. */
+  imageAlt?: string;
   tag: string;
   title: string;
   slug: string;
