@@ -1,8 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { resolveDistAssetDir } from './dist-asset-dir.mjs';
 
 const root = process.cwd();
-const dist = path.join(root, 'dist');
+const assetDir = resolveDistAssetDir(root);
 const key = process.env.INDEXNOW_KEY?.trim();
 const host = process.env.INDEXNOW_HOST?.trim() || 'bf6cheats.org';
 
@@ -11,7 +12,7 @@ if (!key) {
   process.exit(0);
 }
 
-const sitemapPath = path.join(dist, 'sitemap.xml');
+const sitemapPath = path.join(assetDir, 'sitemap.xml');
 if (!fs.existsSync(sitemapPath)) {
   console.warn('IndexNow: dist/sitemap.xml missing — skipping ping.');
   process.exit(0);
@@ -25,7 +26,7 @@ if (urlList.length === 0) {
   process.exit(0);
 }
 
-const keyFile = path.join(dist, `${key}.txt`);
+const keyFile = path.join(assetDir, `${key}.txt`);
 fs.writeFileSync(keyFile, key, 'utf8');
 
 const payload = {
