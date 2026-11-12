@@ -6,5 +6,5 @@ compatibility_date = "2024-11-10"
 directory = "./dist"
 not_found_handling = "404-page"
 
-[vars]
-SITE = "https://bf6-cheats--org.tazeenrooziroti.workers.dev"
+# Canonical URLs in sitemap/robots always use https://bf6cheats.org (see scripts/site-origin.mjs).
+# Do not set SITE to a *.workers.dev host in Cloudflare build env.
